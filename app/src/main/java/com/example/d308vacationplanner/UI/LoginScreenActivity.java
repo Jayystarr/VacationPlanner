@@ -23,6 +23,11 @@ import java.security.NoSuchAlgorithmException;
 
 public class LoginScreenActivity extends AppCompatActivity {
 
+    public static boolean validateCredentials(String username, String password) {
+        return username != null && !username.isEmpty() &&
+                password != null && !password.isEmpty();
+    }
+
     // Demo Credentials are stored here - demoUser
     private static final String VALID_USERNAME = "demoUser";
 
