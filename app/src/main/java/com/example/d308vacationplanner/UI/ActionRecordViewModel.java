@@ -18,7 +18,7 @@ public class ActionRecordViewModel extends AndroidViewModel {
     public ActionRecordViewModel(@NonNull Application application) {
         super(application);
         repository = new Repository(application);
-        allRecords = repository.getAllRecords(); // Assuming repository method is not renamed
+        allRecords = repository.getAllRecords(); 
     }
 
     public LiveData<List<ActionRecord>> getAllRecords() {
@@ -26,6 +26,6 @@ public class ActionRecordViewModel extends AndroidViewModel {
     }
 
     public void searchRecords(String tripTitle) {
-        allRecords = repository.searchRecords(tripTitle); // Assuming repository method is not renamed
+        allRecords = repository.searchRecords(tripTitle); 
     }
 }
